@@ -91,7 +91,67 @@ echo "Hola mundo2" > archivo2.txt
 
 - **Verificar permisos**
 
+_Entrada_:
+
 ```bash
-ls -l ~/archivo1.txt
-ls -ld ~/directorio1
+ls -l archivo1.txt
+ls -ld directorio1
+```
+
+_Salida_:
+
+```bash
+-rw-rw-r-- 1 usuario1 usuario1 11 ago  4 21:11 archivo1.txt
+drwxrwxr-x 2 usuario1 usuario1 4096 ago  4 21:12 directorio1/
+```
+
+- **Modificar Permisos usando `chmod` con Modo Numérico**
+
+```bash
+chmod 640 archivo1.txt
+```
+
+- **Modificar Permisos usando `chmod` con Modo Simbólico**
+
+```bash
+chmod u+x directorio1/archivo2.txt
+```
+
+- **Cambiar el grupo propietario**
+
+```bash
+chgrp grupo1 directorio1/archivo2.txt
+```
+
+- **Configurar permisos de directorio**
+
+```bash
+chmod 740 directorio1
+```
+
+- **Comprobación de acceso**
+
+```bash
+sudo su usuario2
+cat usuario1/archivo1.txt
+cat ~/usuario1/directorio1/archivo2.txt
+exit
+```
+
+- **Verificación final**
+
+_Entrada_:
+
+```bash
+ls -l archivo1.txt
+
+ls -ld directorio1/
+```
+
+_Salida_:
+
+```bash
+-rw-r----- 1 usuario1 usuario1 11 ago  4 21:11 /home/usuario1/archivo1.txt
+
+drwxr----- 2 usuario1 usuario1 4096 ago  4 21:12 directorio1/
 ```

@@ -1,6 +1,6 @@
 # Servicio de Saludo
 
-Creación un servicio en Linux utilizando `systemd` que ejecuta un script que imprime un saludo y la fecha actual infinitamente con una pausa de un segundo.
+Creación de un servicio en Linux utilizando `systemd` que ejecuta un script que imprime un saludo y la fecha actual infinitamente con una pausa de un segundo.
 
 ## Instalación
 

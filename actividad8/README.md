@@ -84,6 +84,4 @@
 
 No se distingue explícitamente entre nodos maestros (masters) y nodos de trabajo (workers) de la misma manera que en un clúster Kubernetes completo.
 
-Por defecto, Minikube configura un solo nodo que actúa como maestro y como worker. Este nodo único tiene todos los componentes necesarios de Kubernetes instalados (API Server, Scheduler, Controller Manager, y etcd para el plano de control, además de Kubelet y Container Runtime como servicios de infraestructura).
-
-- **Funcionamiento**: Aunque no se divida en roles formales de master y worker, el nodo único de Minikube realiza todas las funciones esenciales de un clúster Kubernetes, incluyendo la programación de pods, la gestión de redes, el almacenamiento persistente y la orquestación de contenedores.
+Por defecto, Minikube configura un solo nodo que actúa como maestro y como worker. Este nodo único tiene todos los componentes necesarios de Kubernetes instalados (API Server, Scheduler, Controller Manager, etc).

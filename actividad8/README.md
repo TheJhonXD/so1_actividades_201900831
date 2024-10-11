@@ -3,7 +3,7 @@
 ## 1. Instalación del ambiente local de Kubernetes (usando Minikube)
 
 1. **Instalación de Minikube**:
-   - Descarga e instala Minikube según documentación oficial
+   - Descargar e instalar Minikube según documentación oficial
 
 2. **Iniciar Minikube**:
    ```bash
